@@ -334,6 +334,26 @@
         z-index: 2;
     }
     
+    .header__callback::before {
+        content: "";
+        position: absolute;
+        transform: skew(0deg, 0deg);
+        border: 2px solid #0068F3;
+        width: 96%;
+        height: 90%;
+        transform: translate(0%, -6%);
+        transition: all .3s ease-out;
+    }
+    
+    .header__callback-decor {
+        position: absolute;
+        transform: translate(5px, 5px);
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background: linear-gradient(90deg, #238FFF 0%, #0068F3 100%);
+    }
+    
     .header__callback::after {
         content: "";
         position: absolute;
