@@ -8,16 +8,45 @@
     <link href="https://fonts.googleapis.com/css?family=Alice:regular" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Юридическая помощь в освобождении от армии на законных основаниях</title>
 </head>
 
 <body>
+    <div class="mobile-menu">
+        <div class="mobile__menu-wrapper">
+            <div class="menu-top-menu">
+                <div class="menu-close">
+                    <img src="img/close.png" alt="">
+                </div>
+            </div>
+            <div class="menu-bootom-info">
+                <div class="menu-phone">
+                    <a href="tel:74993942724">
+                7 (499) 394-27-24
+            </a>
+                </div>
+                <div class="menu__callback">
+                    <div class="menu__callback-button">
+                        Заказать звонок
+                    </div>
+                </div>
+                <div class="menu-timetable">
+                    Пн-Вс: 10.00 - 21.00
+                    <br/>по предварительной записи
+                </div>
+                <div class="menu-place">
+                    115172, г. Москва, ул. Большие Каменщики, д. 2, этаж 2 (30 метров от метро Таганская-радиальная, вход в арку)
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header-inner">
             <div class="header__logo">
                 <a href=""><img src="img/logo.svg" alt=""></a>
             </div>
-            <div class="header__list">
+            <div class="header__list" data-da=".menu-top-menu,1270,1">
                 <div class="header__item">
                     <a href="">О нас</a>
                 </div>
@@ -39,6 +68,9 @@
                 <div class="call__icon">
                     <img src="img/phonephone-w.png" alt="">
                 </div>
+                <div class="call__icon-mobile">
+                    <img src="img/phone-b.png" alt="">
+                </div>
                 <div class="header__phone">
                     <a href="tel:74993942724">
                            7 (499) 394-27-24
@@ -49,10 +81,15 @@
                     <span><img src="img/callphone-w-back.png" alt="" class="header__callback-icon">Заказать звонок</span>
                 </div>
             </div>
+            <div class="header__burger">
+                <img src="img/burger.svg" alt="" class="header__burger-menu">
+            </div>
         </div>
     </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/ad.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
