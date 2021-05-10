@@ -538,3 +538,179 @@
             color: #676767;
             padding-left: 30px;
         }
+        
+        .recording-form {
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 107, 246, 0.2);
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 42px 0 52px 50px;
+            transform: skew(-16deg, 0deg);
+            display: inline-block;
+            margin-left: -36px;
+            position: relative;
+            margin-top: 50px;
+        }
+        
+        .recording-form::after {
+            content: '';
+            position: absolute;
+            height: 95%;
+            background-color: #fff;
+            z-index: 2;
+            left: -158px;
+            bottom: -1px;
+            width: 200px;
+            transform: skew(16deg, 0deg);
+            border-right: 1px solid rgba(0, 107, 246, 0.2);
+        }
+        
+        .form {
+            transform: skew(16deg, 0deg);
+        }
+        
+        .form-title {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 170%;
+            text-align: center;
+            color: #181818;
+        }
+        
+        .form-title span {
+            color: #006bf6;
+        }
+        
+        .form-subtitle {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 170%;
+            text-align: center;
+            color: #181818;
+            margin-bottom: 25px;
+        }
+        
+        .user-name {
+            background: #F2F6FC;
+            border: none;
+            border-radius: 10px;
+            width: 265px;
+            padding: 20px 10px 20px 50px;
+            max-height: 54px;
+            position: relative;
+        }
+        
+        .form-user::after,
+        .form-phone::after {
+            content: '';
+            position: absolute;
+            background-color: #5D5D5D;
+            height: 26px;
+            width: 1px;
+            opacity: 0.2;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 40px;
+        }
+        
+        .form-user::before {
+            content: url(../img/user-icon.png);
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 13px;
+            z-index: 13;
+            display: block;
+        }
+        
+        .form-phone::before {
+            content: url(../img/phone-section.png);
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 13px;
+            z-index: 13;
+            display: block;
+        }
+        
+        .user-phone {
+            background: #F2F6FC;
+            border: none;
+            border-radius: 10px;
+            width: 265px;
+            padding: 20px 10px 20px 50px;
+            max-height: 54px;
+            position: relative;
+        }
+        
+        .form-phone {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .form-user {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .form-inputs-wrap {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 90%;
+        }
+        
+        .form-submit {}
+        
+        .form-privacy {}
+        
+        .privacy-text {}
+        
+        .switch input {
+            display: none;
+            /* Прячем исходный флажок */
+        }
+        
+        .switch label {
+            display: inline-block;
+            /* Строчно-блочный элемент */
+            position: relative;
+            /* Относительное позиционирование */
+            width: 60px;
+            height: 30px;
+            /* Размеры прямоугольника */
+            background: #9E9E9E;
+            /* Серый цвет фона */
+            transition: 0.5s;
+            /* Время смены цвета фона */
+        }
+        
+        .switch label::before {
+            content: '';
+            position: absolute;
+            /* Абсолютное позиционирование */
+            background: #fff;
+            /* Цвет фона квадратика */
+            width: 20px;
+            height: 20px;
+            /* Размеры квадратика */
+            left: 35px;
+            top: 5px;
+            /* Положение квадратика */
+            transition: 0.5s;
+            /* Время движения квадратика */
+        }
+        
+        .switch input:checked+label {
+            background: #1976D2;
+            /* Синий цвет фона */
+        }
+        
+        .switch input:checked+label::before {
+            left: 5px;
+            /* Квадратик слева */
+        }
