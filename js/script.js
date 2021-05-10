@@ -4,7 +4,13 @@ $(document).ready(function() {
         $('body').toggleClass('lock');
         console.log('dssd');
     });
-
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 70) {
+            $('header').addClass('scroll');
+        } else {
+            $('header').removeClass('scroll');
+        }
+    });
     const da = new DynamicAdapt("max");
     da.init();
 });

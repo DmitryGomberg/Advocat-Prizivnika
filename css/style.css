@@ -223,17 +223,25 @@
             
             .header {
                 width: 100%;
-                background-color: #fff;
                 min-height: 70px;
-                padding: 0 20px;
-                max-width: 1330px;
-                width: 100%;
-                margin: 0 auto;
                 position: fixed;
                 top: 0;
                 right: 50%;
                 transform: translateX(50%);
                 max-height: 70px;
+                z-index: 12;
+            }
+            
+            .header.scroll {
+                background-color: #fff;
+                transition: all .2s ease;
+            }
+            
+            .header-wrap {
+                max-width: 1330px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 20px;
             }
             
             .container {
@@ -293,6 +301,7 @@
             .header__call {
                 display: flex;
                 margin-left: auto;
+                margin-right: -42px;
             }
             
             .call__icon {
@@ -303,6 +312,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+            
+            body::after {
+                content: url('../img/section-bg.png');
+                position: absolute;
+                top: 0;
+                right: 0;
             }
             
             .call__icon>img {
@@ -316,6 +332,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transform: skew(-16deg);
+                background-color: #fff;
             }
             
             .header__phone a {
@@ -507,7 +525,7 @@
                 font-size: 52px;
                 line-height: 120%;
                 color: #181818;
-                margin-top: 170px;
+                margin-top: 153px;
                 padding-left: 36px;
                 position: relative;
                 margin-bottom: 25px;
@@ -548,9 +566,9 @@
                 padding: 42px 0 31px 50px;
                 transform: skew(-16deg, 0deg);
                 display: inline-block;
-                margin-left: -36px;
+                margin-left: -56px;
                 position: relative;
-                margin-top: 50px;
+                margin-top: 35px;
             }
             
             .recording-form::after {
@@ -559,7 +577,7 @@
                 height: 98%;
                 background-color: #fff;
                 z-index: 2;
-                left: -154px;
+                left: -156px;
                 bottom: -1px;
                 width: 200px;
                 transform: skew(16deg, 0deg);
