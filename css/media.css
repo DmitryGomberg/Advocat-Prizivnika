@@ -106,10 +106,12 @@
     }
     .form-submit {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
     }
     .form-privacy {
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 0px;
     }
     .recording-form::after {
@@ -127,12 +129,18 @@
         margin-left: 0px;
         max-width: 100%;
         width: 100%;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 30px
     }
     .form {
         transform: skew( 0deg, 0deg);
     }
     .main__title {
         font-size: 32px;
+    }
+    body::after {
+        display: none;
     }
 }
 
@@ -142,9 +150,6 @@
     }
     .header__phone a {
         font-size: 18px;
-    }
-    .header__burger {
-        margin-left: 17px;
     }
     .header__phone {
         padding-left: 5px;
