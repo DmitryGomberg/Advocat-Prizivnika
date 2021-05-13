@@ -5,7 +5,7 @@ $(document).ready(function() {
         console.log('dssd');
     });
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 70) {
+        if ($(this).scrollTop() > 20) {
             $('header').addClass('scroll');
         } else {
             $('header').removeClass('scroll');

@@ -4,6 +4,28 @@
     }
 }
 
+@media (max-width: 1815px) {
+    body::after {
+        background-position: 132% 100%;
+    }
+}
+
+@media (max-width: 1500px) {
+    body::after {
+        background-position: 164% 100%;
+    }
+}
+
+@media (max-width: 1550px) {
+    .header-wrap {
+        max-width: 1330px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        padding-right: 55px;
+    }
+}
+
 @media (max-width: 1320px) {
     .header__logo {
         margin-right: 24px;
@@ -13,6 +35,7 @@
 @media (max-width: 1270px) {
     .header__burger {
         display: block;
+        margin-left: 53px;
     }
     .header__callback {
         display: none;
@@ -32,6 +55,9 @@
     }
     .header__item a {
         color: #fff;
+    }
+    .header-wrap {
+        padding: 0 20px;
     }
 }
 
