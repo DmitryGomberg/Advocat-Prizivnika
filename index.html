@@ -17,6 +17,7 @@
         <div class="mobile__menu-wrapper">
             <div class="menu-top-menu">
                 <div class="menu-close">
+
                     <img src="img/close.png" alt="">
                 </div>
             </div>
@@ -45,7 +46,12 @@
         <div class="header-wrap">
             <div class="header-inner">
                 <div class="header__logo">
-                    <a href=""><img src="img/logo.svg" alt=""></a>
+                    <a href="">
+                        <picture>
+                            <source srcset="img/logo-mobile.png" media="(max-width: 400px)" type="image/png">
+                            <img src="img/logo.svg" alt="">
+                        </picture>
+                    </a>
                 </div>
                 <div class="header__list" data-da=".menu-top-menu,1270,1">
                     <div class="header__item">
@@ -89,10 +95,11 @@
         </div>
     </header>
     <section class="section-1">
-        <div class="container">
+        <div class="container container1">
             <div class="main__title">
                 Юридическая помощь<br><span> в освобождении от армии </span><br>на законных основаниях
             </div>
+            <div class="section-img-mobile"><img src="img/section-bg-mobile.png" alt=""></div>
             <ol class="main__list">
                 <li class="main__list-item">Пришла повестка?</li>
                 <li class="main__list-item">Заканчивается отсрочка от армии?</li>
@@ -127,7 +134,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="expert__info">
+                <div class="expert__info" data-da=".container1,375,2">
                     <div class="expert__info-name"><span> Дорошенко Юрий Владимирович</span></div>
                     <div class="expert__info-work"> <span><img src="img/icon.png" alt=""> Адвокат</span></div>
                 </div>

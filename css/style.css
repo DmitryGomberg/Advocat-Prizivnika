@@ -433,6 +433,7 @@
                 
                 .mobile-menu {
                     position: fixed;
+                    z-index: 100;
                     width: 100%;
                     overflow: auto;
                     height: 100%;
@@ -552,6 +553,19 @@
                 
                 .main__title span {
                     color: #006bf6;
+                }
+                
+                .section-img-mobile {
+                    position: absolute;
+                    display: none;
+                    z-index: 2;
+                    left: 0;
+                    width: 100%;
+                    top: 200px;
+                }
+                
+                .section-img-mobile img {
+                    width: 100%;
                 }
                 
                 .main__list {
