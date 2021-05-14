@@ -193,8 +193,8 @@
         }
         .expert__info {
             display: block;
-            position: absolute;
-            top: 355px;
+            position: relative;
+            top: -76px;
         }
         .expert__info-name {
             font-size: 16px;
@@ -204,7 +204,7 @@
             padding: 20px 23px;
         }
         .expert__info-work {
-            bottom: -16px;
+            bottom: 50px;
             z-index: 3;
             padding: 14px 28px;
         }
@@ -223,5 +223,10 @@
         }
         .section-1 {
             padding-bottom: 20px;
+        }
+        .section1-main {
+            display: flex;
+            align-items: center;
+            margin-top: -54px;
         }
     }
